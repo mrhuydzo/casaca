@@ -1,0 +1,41 @@
+#footer{background: white;padding: 30px 0 0}
+.footer_container {}
+//Footer top
+.footer_top {padding: 30px 0;border-bottom: solid 1px $color-border-secondary;margin: 0 0 30px}
+.footer_top__item {position: relative;padding: 0 0 0 50px}
+.footer_top__title {color: $color-brand;font-weight: $font-medium;font-size: $font-size-s;margin: 0 0 5px}
+.footer_top__content {}
+.footer_top__icon {color: $color-brand;width: 32px;height: 32px;padding: 2px;position: absolute;left: 0}
+
+
+.footer_col {}
+.footer_col__head {margin: 0 0 15px}
+.footer_col__title {margin: 0;font-size: $font-size-m;font-weight: $font-medium}
+.footer_col__body {}
+
+.footer_menu {
+  @extend %reset-lst;
+}
+.footer_menu__item {padding: 4px 0;
+  a {
+    &:hover {color: $color-brand}
+  }
+}
+
+.footer_address {
+  svg {width: 24px;height: 24px}
+  tr {}
+  td {vertical-align: middle;padding: 5px 0;
+    &:first-child {padding-right: 10px}
+  }
+}
+.footer_share__social {
+  a {display: inline-block;font-size: 0;}
+}
+.footer_register {border: solid 1px $color-border-secondary;position: relative;
+  @include border-radius(20px);
+  input {background: transparent;display: block;width: 100%;padding: 10px 50px 10px 30px;border: none;color: $color-text-gray}
+  svg {width: 20px;height: 20px;position: absolute;right: 20px;top: 8px;color: $color-text-gray}
+}
+
+.copyright {background: #FAFAFA;padding: 30px 0;border-top: solid 1px $color-border-secondary}

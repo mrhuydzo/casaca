@@ -1,0 +1,61 @@
+//Color
+$color-brand: #71654E;
+$color-gray: #E6E6E6;
+$color-orange: #F7A23B;
+$color-yellow: #FAAD14;
+$color-red: #F44336;
+$color-green: #7EC362;
+
+$color-bg: #F5F5F5 ;
+$color-bg-body: #FAFAFA ;
+$color-bg-secondary: #E6E6E6;
+
+$color-link: #0377AE;
+
+$color-text: #707070;
+$color-text-secondary: #707070;
+$color-text-third: #808285;
+$color-text-gray: #90919A;
+
+$color-disable: #E6E6E6;
+
+$color-border: #999;
+$color-border-secondary: #D9D9D9;
+$color-border-input: #D9D9D9;
+$color-text-input: #808080;
+
+$theme-colors: (
+        brand: $color-brand,
+        gray: $color-gray,
+        orange: $color-orange,
+        yellow: $color-yellow,
+        red: $color-red,
+        error: $color-red,
+        danger: $color-red,
+        green: $color-brand,
+        success: $color-brand,
+        warning: $color-yellow,
+        info: $color-brand,
+        disabled: $color-brand,
+        text: $color-text,
+        text-secondary: $color-text,
+        text-gray: $color-text,
+        border: $color-border,
+        border-secondary: $color-border-secondary,
+        input: $color-brand,
+        divider: #E8EAED,
+        light: #F8F9FE,
+        dark: #343a40,
+        white: #FFF,
+        black: #000
+);
+
+@each $name, $color in $theme-colors {
+  .color_#{$name}{
+    color: $color !important;
+  }
+
+  .bg_#{$name} {
+    background-color: $color !important;
+  }
+}

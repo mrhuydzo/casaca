@@ -1,0 +1,19 @@
+@import "_color";
+@import "_font-size";
+
+
+
+//Url base
+//url(#{$url-img}/site/background.jpg)
+$url-img: "../images";
+
+//Breakpoint
+$bp-xs: 425px;
+$bp-s: 576px;
+$bp-mobile: 576px;
+
+$bp-md: 768px;
+$bp-tablet: 768px;
+$bp-l: 992px;
+$bp-laptop: 992px;
+$bp-xl: 1200px;

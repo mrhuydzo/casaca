@@ -1,0 +1,22 @@
+.blocker {z-index: 9999 !important;}
+.modal_primary {background: white;padding: 0;width: 98%;vertical-align: top;max-width: 800px;
+  @include border-radius(0);
+  a.close-modal {}
+  .modal_header {background: white;padding: 20px;}
+  .modal_title {margin: 0;font-weight: $font-bold;font-size: $font-size-bb;}
+  .modal_body {padding: 20px;min-height: 200px}
+  .modal_content {padding: 20px}
+  .modal_footer {padding: 20px}
+
+  .modal_group__button {text-align: right;
+    .modal_button {font-size: $font-size-s;text-transform: uppercase;display: inline-block;padding: 5px;margin-left: 10px;
+      &:only-child {margin-left: 0}
+      &.modal_button__cancel {color: black;
+        &:hover {color: darken(black,20%)}
+      }
+      &.modal_button__apply {color: $color-brand;
+        &:hover {color: darken($color-brand,20%)}
+      }
+    }
+  }
+}

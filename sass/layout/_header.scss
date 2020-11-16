@@ -1,0 +1,108 @@
+#header {padding: 5px 0;position: sticky;top: 0;z-index: 111;min-height: 70px;width: 100%;display: flex;align-items: center;
+  @include transition(all .3s ease);
+  @include linear-gradient-h($color-brand,$color-brand);
+  &.fixed {position: fixed;top: 0}
+}
+.header_container {display: flex;align-items: center}
+.header_col {
+  &--left {margin: 0 25px 0 0}
+  &--center {flex: 1;padding: 0 10px}
+  &--right {justify-content: flex-end;display: flex}
+}
+.header_search {}
+.header_search_input {}
+.header_search_icon {}
+
+
+.header_button {display: flex}
+.header_button_item {text-align: center;display: flex;padding: 0 10px;
+  &:last-child {padding-right: 0}
+}
+.header_button_icon {font-size: $font-size-tiny;display: flex;flex-direction: column;align-items: center;color: white;position: relative;
+  svg {width: 32px;height: 32px;padding: 5px;}
+  &:hover {color: white}
+}
+.header_button__notify {background: $color-brand;color: white;height: 16px;line-height: 16px;min-width: 16px;padding:0 3px;position: absolute;top: 0;right: 0;z-index: 1;
+  @include border-radius(15px);
+}
+
+
+//Header Bar
+.header_bar {display: flex;align-items: center;min-height: 48px;position: relative;
+  @include box-shadow(1px,0,3px,black5);
+  @include border-radius(0 8px 8px 0);
+}
+.header_bar__icon {position: relative;
+  > a {background: white;color: $color-brand;width: 75px;height: 48px;display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: $font-size-tiny;
+    @include border-radius(8px 0 0 8px);
+    &:hover {color: $color-brand}
+    svg {width: 18px;height: 12px;margin: 0 0 3px 0}
+  }
+}
+.header_search {background: white;display: flex;align-items: center;height: 48px;flex: 1;overflow: hidden;
+  @include border-radius(0 8px 8px 0);
+}
+.header_search__input {border: none;flex: 1}
+.header_search__select {border: none;margin: 0 5px 0 0;
+  select.select_common {border: none}
+}
+.header_search__btn {background: white;color: $color-brand;width: 60px;height: 48px;display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: $font-size-tiny;border: none;cursor: pointer;
+  &:hover {opacity: .8}
+  svg {color: $color-brand;width: 22px;height: 22px}
+}
+
+//Search Detail
+.search_detail {background: white;position: absolute;top: 50px;left: 0;opacity: 0;visibility: hidden;min-height: 200px;width: 100%;
+  @include transition(all .3s ease);
+  @include box-shadow(0,3px,6px,rgba(black, .08));
+  @include border-radius(8px);
+  &.open {opacity: 1;visibility: visible}
+}
+.search_detail__top {}
+.search_detail__body {padding: 10px 20px}
+.search_detail__list {background: $color-bg;display: flex;align-items: center;padding: 10px;
+  @include border-radius(8px 8px 0 0);
+}
+.search_detail__item {display: flex;align-items: center;color: black;justify-content: space-between;
+  a {display: flex;align-items: center;height: 28px;padding: 5px 8px;position: relative;font-size: $font-size-tiny;
+    @include box-shadow(0,1px,3px,rgba(black,.15));
+    @include border-radius(14px);
+    &:hover {background: white}
+  }
+  &.active a{background: white;color: $color-brand}
+  svg {width: 16px;height: 16px;margin: 0 5px 0 0}
+  + .search_detail__item {margin-left: 10px;}
+}
+.search_detail__section {margin: 0 0 30px;
+  .head {font-size: $font-size-s;font-weight: $font-bold;margin: 0 0 10px}
+  .body {}
+  &.history {
+    a.history_item {display: inline-block;padding: 5px 8px;border: solid 1px $color-border;color: $color-text-secondary;font-size: $font-size-tiny;
+      @include border-radius(3px);
+      + a {margin-left: 5px}
+      &:hover {border-color: $color-brand;color: $color-brand}
+    }
+  }
+  &.featured {
+    .body {display: flex;flex-wrap: wrap;margin: 0 -10px;max-height: 230px;overflow-y: auto;
+      /* width */
+      &::-webkit-scrollbar {width: 5px;}
+      /* Track */
+      &::-webkit-scrollbar-track {background: $color-bg;}
+      /* Handle */
+      &::-webkit-scrollbar-thumb {background: $color-border-secondary;}
+      /* Handle on hover */
+      //&::-webkit-scrollbar-thumb:hover {background: #555;}
+    }
+    a.featured_item {display: flex;flex: 0 0 30%;width: 30%;font-weight: $font-bold;align-items: center;padding: 10px;margin: 0 10px 20px 10px;font-size: $font-size-tiny;
+      @include box-shadow(0,3px,6px,rgba(black,.15));
+      .thumb {display: block;width: 32px;height: 32px;position: relative;margin-left: auto;
+          &::before {content: '';display: block;padding-top: 100%;}
+          img {@include responsive-ratio-img}
+      }
+      strong {margin: 0 5px 0 0;
+        @include line-number(2);
+      }
+    }
+  }
+}

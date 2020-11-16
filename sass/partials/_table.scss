@@ -1,0 +1,17 @@
+.table_common {width: 100%;border-spacing: 0;
+  thead {
+    tr {}
+    th {}
+  }
+  tbody {
+    tr {}
+    td {padding: 4px}
+  }
+  &.table_striped {
+      tr:nth-of-type(odd) {background: $color-bg}
+  }
+  &.table_style1 {
+      th {background: #FAFAFA;font-size: $font-size-s;font-weight: $font-medium;padding: 15px 0;border-bottom: solid 1px black;}
+      td {border-bottom: solid 1px $color-border-secondary}
+  }
+}

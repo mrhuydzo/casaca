@@ -1,0 +1,13 @@
+.form_common {
+  .require {color: $color-red}
+  .form_row {margin-bottom: 15px;
+    &.form_error {
+      .form_error_text {color: $color-red;font-size: $font-size-tiny;font-style: italic}
+    }
+  }
+  .form_label {margin-bottom: 10px;display: inline-block}
+  .form_textarea {resize: none;border: solid 1px $color-border-input;padding: 5px 10px;box-shadow: none;color: $color-text-input;
+    @include border-radius(4px);
+  }
+  .form_row__inline {margin-bottom: 15px;display: flex}
+}

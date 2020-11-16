@@ -1,0 +1,139 @@
+//Spacing - Begin
+$spacing-values: (0, 4, 5, 8, 10, 12, 15, 20, 25,30,35,40,45, 50, 100);
+@each $spacing-value in $spacing-values {
+  //Margin - Begin
+  .m, .mt, .mtl, .mtr, .mtb {
+    &#{$spacing-value} {
+      margin-top: #{$spacing-value}px !important;
+    }
+  }
+
+  .m, .mb, .mbl, .mbr, .mtb {
+    &#{$spacing-value} {
+      margin-bottom: #{$spacing-value}px !important;
+    }
+  }
+
+  .m, .ml, .mtl, .mlr, .mbl {
+    &#{$spacing-value} {
+      margin-left: #{$spacing-value}px !important;
+    }
+  }
+
+  .m, .mr, .mlr, .mtr, .mbr {
+    &#{$spacing-value} {
+      margin-right: #{$spacing-value}px !important;
+    }
+  }
+
+  .mx {
+    &#{$spacing-value} {
+      padding: 0 #{$spacing-value}px !important;
+    }
+  }
+
+  .my {
+    &#{$spacing-value} {
+      padding: #{$spacing-value}px  0 !important ;
+    }
+  }
+  //Margin - End
+
+  //Padding - Begin
+  .p, .pt, .ptl, .ptr, .ptb {
+    &#{$spacing-value} {
+      padding-top: #{$spacing-value}px !important;
+    }
+  }
+
+  .p, .pb, .pbl, .pbr, .ptb {
+    &#{$spacing-value} {
+      padding-bottom: #{$spacing-value}px !important;
+    }
+  }
+
+  .p, .pl, .ptl, .plr, .pbl {
+    &#{$spacing-value} {
+      padding-left: #{$spacing-value}px !important;
+    }
+  }
+
+  .p, .pr, .plr, .ptr, .pbr {
+    &#{$spacing-value} {
+      padding-right: #{$spacing-value}px !important;
+    }
+  }
+
+  .px {
+    &#{$spacing-value} {
+      padding: 0 #{$spacing-value}px !important;
+    }
+  }
+
+  .py {
+    &#{$spacing-value} {
+      padding: #{$spacing-value}px  0 !important ;
+    }
+  }
+  //Padding - Begin
+
+  .e#{$spacing-value} {
+    width: calc(100% + (#{$spacing-value}px * 2)) !important;
+  }
+
+  .el, .e {
+    &#{$spacing-value} {
+      position: relative;
+      left: -#{$spacing-value}px;
+    }
+  }
+
+  .el, .er {
+    &#{$spacing-value} {
+      width: calc(100% + #{$spacing-value}px) !important;
+    }
+  }
+}
+//Spacing - End
+
+//Width
+$width-values: (50,70,100,120,150,180,200,250,300,400,500,600);
+@each $value in $width-values {
+  .max-width {
+    &#{$value} {
+      max-width: #{$value}px !important;
+    }
+  }
+  .min-width{
+    &#{$value} {
+      min-width: #{$value}px !important;
+    }
+  }
+}
+
+
+//Vertical align
+$vertical-align-values: (-1,-2,-3,-4,-5,0,1,2,3,4,5);
+@each $vertical-align-value in $vertical-align-values {
+    .vertical_align{
+      &#{$vertical-align-value}{
+        vertical-align: #{$vertical-align-value}px !important;
+      }
+    }
+}
+
+//Icon Size
+$icon-values: (10,12,15,18,20,22,25,30,35,40,45);
+@each $icon-value in $icon-values {
+    .icon-size-{
+      &#{$icon-value}{
+        width: #{$icon-value}px !important;
+        height: #{$icon-value}px !important;
+        font-size: 0;
+        display: inline-block;
+        vertical-align: -2px;
+      }
+    }
+}
+
+

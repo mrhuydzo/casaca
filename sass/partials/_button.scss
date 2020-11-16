@@ -1,0 +1,86 @@
+@mixin button_common {display: inline-block;text-align: center;outline: none;padding: 0 20px;overflow: hidden;border: none;cursor: pointer;min-height: 38px;line-height: 38px;font-size: $font-size-s;
+  @include transition(all .3s ease);
+  @include border-radius(2px);
+  img {margin-right: 5px;vertical-align: middle;width: inherit}
+  i {vertical-align: middle;
+    &:first-child {margin: 0 5px;}
+    &:only-child {margin: 0}
+  }
+  
+  /*&.btn_icon {
+    svg,
+    i,
+    img {
+      vertical-align: middle;
+      &:first-child {margin: 0 5px;}
+      &:only-child {margin: 0}
+    }
+  }*/
+
+  &.button_micro {font-size: $font-size-xs;min-height: 24px;line-height: 24px;}
+  &.button_tiny {font-size: $font-size-xs;min-height: 28px;line-height: 28px;}
+  &.button_small {font-size: $font-size-xs;min-height: 32px;line-height: 32px;}
+  &.button_regular {font-size: $font-size-s;min-height: 36px;line-height: 36px;
+    &[class*="button_icon_"] {
+      svg {width: 18px;height: 18px;vertical-align: -3px}
+    }
+  }
+  &.button_large {
+    &[class*="button_icon_"] {
+      svg {width: 16px;height: 16px;vertical-align: -3px}
+    }
+  }
+  &.button_full {display: block;width: 100%}
+
+  &.disabled,
+  &:disabled {background: $color-disable !important;color: $color-text-secondary !important;border-color: $color-disable !important;cursor: auto}
+
+  &:hover {background: darken($color-brand,20%);color: white;}
+  &:focus,
+  &.active,
+  &:active {background: darken($color-brand,20%);color: white}
+  &[class*="button_icon_"] {
+    svg {width: 18px;height: 18px;vertical-align: -2px}
+  }
+  &.button_icon_left {
+    svg {margin: 0 5px 0 0}
+  }
+  &.button_icon_right {
+    svg {margin: 0 0 0 5px}
+  }
+  &.button_shadow {
+    @include box-shadow(0px,2px,2px,black);
+  }
+}
+
+.button_primary {color: white;
+  @include button_common;
+  @include linear-gradient-h($color-brand,$color-brand);
+  &:hover {background: darken($color-brand,10%);color: white}
+}
+.button_shadow {
+  @include box-shadow(1px ,0 ,3px ,black5)
+}
+
+.button_outline {
+  @include button_common;
+  border: solid 1px $color-brand;
+  &:hover {
+    border-color: darken($color-brand,50%);
+  }
+}
+
+
+.button_secondary {
+  @include button_common;
+  border: solid 1px $color-brand;
+  background: white;color: $color-brand;
+  &:hover {
+    border-color: darken($color-brand,50%);
+  }
+}
+.button_secondary_gray {
+  @include button_common;
+  background: white;color: $color-text-secondary;border-color:$color-border-secondary;
+  &:hover {background: white;border-color: $color-brand;color: $color-brand}
+}

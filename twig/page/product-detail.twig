@@ -1,0 +1,59 @@
+{% extends "../layout/layout.twig" %}
+{% block pageTitle %} Casaca | Page Product {% endblock %}
+{% block page %}
+    <div id="page_product_detail" class="page_main">
+        {% include "../layout/header.twig" %}
+        {% include "../layout/banner.twig" %}
+        <div class="page_body">
+            <div class="container">
+                <div class="product_detail__container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="product_gallery">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product_detail__box">
+                                <h1 class="product_detail__name">
+                                    Bàn Gấp Dã Ngoại - C01
+                                </h1>
+                                <div class="product_detail__price">
+                                    2.500.000 VNĐ
+                                </div>
+                                <div class="product_detail__attr">
+                                    <div>Kích thước (khi sử dụng): Rộng 85 x Dài 50 x Cao 42 (cm)</div>
+                                    <div>Kích thước (khi sử dụng): Rộng 85 x Dài 50 x Cao 42 (cm)</div>
+                                    <div>Cân nặng: 5.80 kg</div>
+                                    <div>Chất liệu: Gỗ tần bì tự nhiên, thép không gỉ</div>
+                                    <div class="product_detail__attr_color">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_detail__like">
+                    <div class="header">
+                        <h3>Other Products You May Like</h3>
+                    </div>
+                    <div class="product_collection">
+                        <div class="row product_collection__row">
+                            {% for i in 0..3 %}
+                                <div class="col-md-3 product_collection__col">
+                                    {% include '../components/product_item.twig' %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include '../layout/footer.twig' %}
+    </div>
+
+{% endblock %}
+<script type="text/javascript">
+
+</script>

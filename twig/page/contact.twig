@@ -1,0 +1,62 @@
+{% extends "../layout/layout.twig" %}
+
+
+{% block pageTitle %} Casaca | Page Contact{% endblock %}
+{% block page %}
+    <div id="page_contact" class="page_main">
+        {% include "../layout/header.twig" %}
+        <div class="page_body">
+            <div class="container">
+                <div class="contact_container">
+                    <h2 class="contact_title">C O N T A C T   U S</h2>
+                    <div class="contact_summary">
+                        <p>
+                            Contact us with any queries or questions you may have and we will get back to you as soon as possible (usually within 1 working day). Please note our studio is closed over the weekend.
+                        </p>
+
+                        <p>
+                            If you would like to visit our workshop please get in touch so we can arrange a suitable day and time - we look forward to meeting you!
+                        </p>
+
+                        <div>
+                            <a href="mailto:Email: casaca.vn@gmail.com">Email: casaca.vn@gmail.com</a>
+                        </div>
+                        <form class="contact_frm">
+                            <div class="contact_frm__title">
+                                Get in touch
+                            </div>
+                            <div class="contact_frm__row">
+                                <label for="">Name *</label>
+                                <input type="text" class="input_common input_common--full contact_frm__input">
+                            </div>
+                            <div class="contact_frm__row">
+                                <label for="">Name *</label>
+                                <input type="text" class="input_common input_common--full contact_frm__input">
+                            </div>
+                            <div class="contact_frm__row">
+                                <label for="">Email *</label>
+                                <input type="text" class="input_common input_common--full contact_frm__input">
+                            </div>
+                            <div class="contact_frm__row">
+                                <label for="">Phone number</label>
+                                <input type="text" class="input_common input_common--full contact_frm__input">
+                            </div>
+                            <div class="contact_frm__row">
+                                <label for="">Message</label>
+                                <textarea col="5" class="input_common input_common--full contact_frm__input"></textarea>
+                            </div>
+                            <div class="contact_frm__row">
+                                <button type="submit" class="contact_frm__submit"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include '../layout/footer.twig' %}
+    </div>
+
+{% endblock %}
+<script type="text/javascript">
+
+</script>

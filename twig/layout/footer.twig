@@ -1,13 +1,55 @@
-{% set arr = [
-    {title: 'Mua hàng thuận tiện',content: 'Ezbuy giúp bạn mua hàng trên khắp thế giới như mua hàng tại Việt Nam.',icon: 'bag'},
-    {title: 'Thanh toán dễ dàng',content: 'Dễ dàng thanh toán như mua hàng tại Việt Nam.',icon: 'credit-card'},
-    {title: 'Chuyển hàng siêu tốc',content: 'Chuyển hàng Quốc tế về Việt Nam chỉ từ 5 - 7 ngày.',icon: 'ghn'},
-    {title: 'Hỗ trợ 7/365',content: 'Đội ngũ hỗ trợ khách hàng tận tình 8h - 21h kể cả Thứ 7 và Chủ Nhật',icon: 'icon-support'},
+{% set arr1 = [
+    {title: 'Our Products'},
+    {title: 'New In'},
+    {title: 'Resources DIY'},
+    {title: 'Camping'},
+] %}
+
+{% set arr2 = [
+    {title: 'Our Services'},
+    {title: 'About Casaca'},
+    {title: 'Contact Us'},
+    {title: 'Blog'},
 ] %}
 
 <div id="footer">
-    <div class="container-custom footer_container">
+    <div class="container footer_container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="subcribe">
+                    <div class="">Mailing List</div>
+                    <form action="" class="subcribe_frm">
+                        <input type="text"/>
+                        <button class="">Sign</button>
+                    </form>
+                    <div class="">Sign up to get the latest on sales, new releases and more …</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer_menu">
+                    {% for i in arr1 %}
+                    <div class="footer_menu__item">
+                        <a href="#" title="{{ i.title }}">{{ i.title }}</a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-2">
+                {% for i in arr2 %}
+                    <div class="footer_menu__item">
+                        <a href="#" title="{{ i.title }}">{{ i.title }}</a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-md-2">
+                <div class="footer_social">
+                    <div>Social</div>
+                    <div class="footer_social__lst">
+                        <a href="#" class="footer_social__item"></a>
+                    </div>
+                </div>
 
+            </div>
+        </div>
     </div>
-
 </div>

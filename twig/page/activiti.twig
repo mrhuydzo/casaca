@@ -1,0 +1,45 @@
+{% extends "../layout/layout.twig" %}
+
+{% set arr = [
+    {title: 'NGOẠI THẤT CẮM TRẠI'},
+    {title: 'SÂN VƯỜN'},
+    {title: 'NỘI THẤT TỐI GIẢN'},
+    {title: 'NGUYÊN LIỆU DIY'},
+] %}
+
+
+{% block pageTitle %} Casaca | Page Activities{% endblock %}
+{% block page %}
+    <div id="page_activiti" class="page_main">
+        {% include "../layout/header.twig" %}
+        {% include "../layout/banner.twig" %}
+        <div class="page_body">
+            <div class="container">
+                <div class="page_title">
+                    <span>ACTIVITIES</span>
+                </div>
+                <div class="activiti_group">
+                    {% for j in 0..1 %}
+                    <div class="row activiti_thumbs">
+                        {% for i in 0..3 %}
+                            <div class="col-md-3 activiti_item">
+                                <div class="activiti_thumbs">
+                                    <a href="#" title="">
+                                        <img src="http://via.placeholder.com/340x230" alt=""/>
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="activiti_summary">Workshop cùng bé làm búp bê gỗ</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% include '../layout/footer.twig' %}
+    </div>
+
+{% endblock %}
+<script type="text/javascript">
+
+</script>

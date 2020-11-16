@@ -7,22 +7,42 @@
     { name: "Nhắn tin", icon: "facebook-messenger"},
 ] %}
 
-<!--=======================HEADER=======================++-->
-<header id="header">
-    <div class="container-custom header_container">
-        <div class="header_col header_col--left">
-            <a href="javascript:void(0)" title="" id="logo">
-                <img src="/image/logo-white.png" alt="" />
-            </a>
-        </div>
-        <div class="header_col header_col--center">
 
-        </div>
-        <div class="header_col header_col--right">
-            <div class="header_button">
-
+<header id="header" class="header">
+    <div class="container header_inner">
+        <div class="row">
+            <div class="col-8 col-lg-3 header_col header_col__left">
+                <!--Logo-->
+                <h1 class="logo">
+                    <a href="#" rel="home">
+                        <img src="" alt=""/>
+                    </a>
+                    <p class="site_description">Chuyên may đo đồng phục</p>
+                </h1>
+                <!--//Logo-->
+            </div>
+            <div class="col-4 col-lg-9 header_col header_col__right">
+                <!-- #site-navigation -->
+                <div class="navtop_collapse">
+                    <nav id="site-navigation" class="navigation_main">
+                        <div class="menu-header-menu-container">
+                            <div class="navtop_lst">
+                                {% for i in arr %}
+                                <li>
+                                    <a href="#" title="{{ i.name }}">{{ i.name }}</a>
+                                </li>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <a id="navtop_icon" class="menu-toggle" rel="nofollow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
         </div>
     </div>
 </header>
-<!--=======================//HEADER=======================-->

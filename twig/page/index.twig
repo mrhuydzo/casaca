@@ -1,14 +1,30 @@
 {% extends "../layout/layout.twig" %}
-{% block pageTitle %} Ezbuy | Home Page {% endblock %}
+{% block pageTitle %} Casaca | Page Product {% endblock %}
 {% block page %}
     <div id="page_home" class="page_main">
-        {% include "../layout/topbar.twig" %}
         {% include "../layout/header.twig" %}
-
+        {% include "../layout/banner.twig" %}
         <div class="page_body">
+            <div class="container">
+                <div class="product_collection">
+                    <div class="row product_collection__row">
+                        {% for i in 0..7 %}
+                        <div class="col-md-3 product_collection__col">
+                            {% include '../components/product_item.twig' %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
 
+                <hr/>
+
+                {% include '../components/home_blog.twig' %}
+            </div>
         </div>
         {% include '../layout/footer.twig' %}
     </div>
 
 {% endblock %}
+<script type="text/javascript">
+
+</script>

@@ -1,0 +1,46 @@
+{% extends "../layout/layout.twig" %}
+
+{% set arr = [
+    {title: 'NGOẠI THẤT CẮM TRẠI'},
+    {title: 'SÂN VƯỜN'},
+    {title: 'NỘI THẤT TỐI GIẢN'},
+    {title: 'NGUYÊN LIỆU DIY'},
+] %}
+
+
+{% block pageTitle %} Casaca | Page Product List{% endblock %}
+{% block page %}
+    <div id="page_product_list" class="page_main">
+        {% include "../layout/header.twig" %}
+        {% include "../layout/banner.twig" %}
+        <div class="page_body">
+            <div class="container">
+                {% for i in arr %}
+                <div class="block">
+                    <div class="block_header">
+                        <h2 class="block_title">
+                            <a href="#" title="">{{ i.title }}</a>
+                        </h2>
+                    </div>
+                    <div class="block_body">
+                        <div class="product_collection">
+                            <div class="row product_collection__row">
+                                {% for i in 0..7 %}
+                                    <div class="col-md-3 product_collection__col">
+                                        {% include '../components/product_item.twig' %}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% include '../layout/footer.twig' %}
+    </div>
+
+{% endblock %}
+<script type="text/javascript">
+
+</script>

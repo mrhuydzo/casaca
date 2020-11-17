@@ -15,6 +15,10 @@
 
 .footer_menu {
   @extend %reset-lst;
+  padding-top: 15px;
+  @media (min-width: $bp-md) {
+    padding-top: 0;
+  }
 }
 .footer_menu__item {padding: 0 0 10px;
   a {font-size: $font-size-s;font-family: $font-regular;

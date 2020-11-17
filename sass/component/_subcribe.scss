@@ -1,5 +1,10 @@
-.subcribe {}
-.subcribe_frm {max-width: 330px}
+.subcribe {padding: 0 0 50px}
+.subcribe_frm {}
 .subcribe_frm__row {display: flex;margin: 0 0 5px}
 .subcribe_frm__input {flex: 1;}
 .subcribe_frm__submit {background: $color-dark;color: white;padding: 0 15px;border: none;margin: 0 0 0 15px}
+
+@media (min-width: $bp-l) {
+  .subcribe {padding: 0}
+  .subcribe_frm {max-width: 330px}
+}

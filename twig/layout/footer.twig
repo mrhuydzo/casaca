@@ -15,10 +15,10 @@
 <div id="footer">
     <div class="container footer_container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
                 {% include '../components/subcribe.twig' %}
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4 col-lg-2">
                 <div class="footer_menu">
                     {% for i in arr1 %}
                     <div class="footer_menu__item">
@@ -27,14 +27,16 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="col-md-2">
-                {% for i in arr2 %}
-                    <div class="footer_menu__item">
-                        <a href="#" title="{{ i.title }}">{{ i.title }}</a>
-                    </div>
-                {% endfor %}
+            <div class="col-md-4 col-lg-2">
+                <div class="footer_menu">
+                    {% for i in arr2 %}
+                        <div class="footer_menu__item">
+                            <a href="#" title="{{ i.title }}">{{ i.title }}</a>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4 col-lg-2">
                 <div class="footer_social">
                     <div>Social</div>
                     <div class="footer_social__lst">

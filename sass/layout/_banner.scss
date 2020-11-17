@@ -1,6 +1,24 @@
 .banner {}
 .banner_inner {
-  a {display: inline-block;font-size: 0;
-    img {}
+  a {display: block;font-size: 0;position: relative;overflow: hidden;
+    &::before {content: '';display: block;
+      @include responsive-ratio(350,230);
+    }
+    img {
+      @include responsive-ratio-img();
+    }
+  }
+}
+
+@media (min-width: $bp-md) {
+  .banner_inner {
+    a {
+      &::before {content: '';display: block;
+        @include responsive-ratio(1920,700);
+      }
+      img {
+        @include responsive-ratio-img();
+      }
+    }
   }
 }

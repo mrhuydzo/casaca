@@ -1,3 +1,10 @@
-#logo {font-size: 0;display: block;
-  img {width: 150px}
+#logo {font-size: 0;display: block;margin: 0;
+  img {max-width: 100%}
+  a {display: inline-block;font-size: 0}
+  .site_description {opacity: 0;font-size: 0;text-indent: -9999em}
+}
+@media (min-width: $bp-md) {
+  #logo {
+    img {max-width: 260px}
+  }
 }

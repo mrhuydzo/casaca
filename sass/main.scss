@@ -12,6 +12,11 @@
 
 // Components and modules
 
+@import "component/_product-item";
+@import "component/_home-blog";
+@import "component/_subcribe";
+
+
 @import "partials/_form";
 @import "partials/_fields";
 @import "partials/_button";
@@ -34,7 +39,7 @@
 
 // Vendors and external stylesheets
 
-body {background-color: $color-bg-body;font-family: $font-base;color: $color-text; font-weight: $font-regular;font-size: $font-size-xs;line-height: 1.4;-webkit-font-smoothing: antialiased;overflow-x: hidden;
+body {font-family: $font-base;color: $color-text;font-size: $font-size-xs;line-height: 1.4;-webkit-font-smoothing: antialiased;overflow-x: hidden;
   &.open_menu {overflow: hidden}
 }
 

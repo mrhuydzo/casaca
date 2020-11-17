@@ -1,0 +1,16 @@
+.product_collection {}
+.product_collection__row {}
+.product_collection__col {margin-bottom: 30px}
+
+.product_item {}
+.product_item__thumb{display: block;position: relative;margin: 0 0 10px;border: solid 1px $color-border-secondary;
+  @include responsive-ratio(300,400);
+  img {
+    @include responsive-ratio-img();
+  }
+}
+.product_item__info {text-align: center}
+.product_item__name {margin: 0 0 5px;font-size: $font-size-s;font-family: $font-light;
+  a {}
+}
+.product_item__price{font-family: $font-medium;color: $color-dark}

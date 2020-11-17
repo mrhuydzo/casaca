@@ -1,26 +1,22 @@
 .navtop {}
-.navtop_inner {min-height: 90px;position: relative;padding: 0;
-  @media (min-width: $bp-mobile) {
-    //padding: 25px 0;
-  }
-}
+.navtop_inner {min-height: 90px;position: relative;padding: 0;}
 
 /*Nav icon*/
-#navtop_icon {background: transparent;border: none;margin: 0;width: 20px;height: 16px;position: relative;cursor: pointer;outline: none;margin-left: 20px;display: none;
+#navtop_icon {background: transparent;border: none;margin: 0;width: 20px;height: 16px;position: absolute;cursor: pointer;outline: none;right: 15px;top: 15px;display: none;
   @media (max-width: $bp-l) {
     display: block;
   }
-  span {background: $color-link;display: block;position: absolute;height: 1px;width: 100%;opacity: 1;left: 0;
-    @include transition(all .3s ease-in-out);
+  span {background: $color-base;display: block;position: absolute;height: 1px;width: 100%;opacity: 1;left: 0;
+    @include transition(all .2s ease);
     @include transform(rotate(0deg));
 
-    &:nth-child(1) {top: 0px;}
+    &:nth-child(1) {top: 0;}
     &:nth-child(2) {top: 7px;}
     &:nth-child(3) {top: 7px;}
     &:nth-child(4) {top: 14px;}
   }
   &.open {z-index: 9999}
-  &.open span:nth-child(1) {top: 18px;width: 0%;left: 50%;}
+  &.open span:nth-child(1) {top: 18px;width: 0;left: 50%;}
   &.open span:nth-child(2) {
     @include transform(rotate(45deg));
   }
@@ -35,22 +31,22 @@
     background: #000;
     position: fixed;
     top: 0;
-    left: -285px;
+    left: -260px;
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
     line-height: inherit;
-    width: 280px;
+    width: 260px;
     z-index: 9999;
     justify-content: flex-start;
     align-items: flex-start;
     @include transition(all 0.5s ease-in-out);
   }
   &.open {
-    @include transform(translate3d(285px, 0px, 0))
+    @include transform(translate3d(260px, 0px, 0))
   }
 }
-.navigation_main {width: 100%;padding: 50px 0;
+.navigation_main {width: 100%;
   @media (min-width: $bp-l) {
     padding: 0px;width: auto;
   }
@@ -61,8 +57,8 @@
     padding: 0;
   }
   & > li {padding: 10px 0;position: relative;
-    &.menu-item-has-children {
-        & > a {
+    &.has_children {
+        & > a {color: white;
           &:before {content: '';background: url(https://use.fontawesome.com/releases/v5.0.10/svgs/solid/chevron-down.svg) no-repeat 50% 50%;display: block;position: absolute;right: 0;top: 50%;width: 10px;height: 10px;
             @include transform(translateY(-50%))
           }
@@ -73,23 +69,22 @@
       @media (min-width: $bp-l) {
         color: inherit;float: none
       }
-      &:hover {color: $color-link;}
+      &:hover {color: $color-base;}
     }
-    &.current-menu-item > a {color: $color-link;}
+    &.current-menu-item > a {color: $color-base;}
     i {margin-right: 5px}
 
     @media (min-width: $bp-l){
       display: inline-block;padding: 15px 20px;
     }
     &:hover {
-        .sub-menu {opacity: 1;visibility: visible;top: 57px}
-        a i {color: $color-base}
+        .sub_menu {opacity: 1;visibility: visible;top: 57px}
     }
   }
 }
 
 //Submenu
-ul.sub-menu {background: transparent;position: inherit;top: inherit; right: inherit;visibility: inherit;opacity: inherit;min-width: inherit;padding: 0 0 0 15px;margin: 0;
+ul.sub_menu {background: transparent;position: inherit;top: inherit; right: inherit;visibility: inherit;opacity: inherit;min-width: inherit;padding: 0 0 0 15px;margin: 0;
   @extend %reset-lst;
   @media (min-width: $bp-l) {
     background: #fff;position: absolute;z-index: 11;top: 30px;right: 0;padding:0 0 15px;visibility: hidden;opacity: 0;min-width: 200px;border-top: 2px solid $color-base;
@@ -104,7 +99,7 @@ ul.sub-menu {background: transparent;position: inherit;top: inherit; right: inhe
       &:hover {text-indent: 5px}
       @media (min-width: $bp-l) {
         padding: 10px;
-        &:hover {background: $color-brand;}
+        &:hover {background: $color-brand;color: white}
       }
     }
   }

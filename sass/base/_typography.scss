@@ -1,19 +1,58 @@
 @font-face {
   font-family: 'SanFranciscoDisplay-Thin';
-  src: url('SanFranciscoDisplay-Thin.eot');
-  src: url('SanFranciscoDisplay-Thin.eot?#iefix') format('embedded-opentype'),
-  url('SanFranciscoDisplay-Thin.svg#SanFranciscoDisplay-Thin') format('svg'),
-  url('SanFranciscoDisplay-Thin.ttf') format('truetype'),
-  url('SanFranciscoDisplay-Thin.woff') format('woff'),
-  url('SanFranciscoDisplay-Thin.woff2') format('woff2');
+  src: url('../../fonts/SanFranciscoDisplay-Thin.eot');
+  src: url('../../fonts/SanFranciscoDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SanFranciscoDisplay-Thin.svg#SanFranciscoDisplay-Thin') format('svg'),
+  url('../../fonts/SanFranciscoDisplay-Thin.ttf') format('truetype'),
+  url('../../fonts/SanFranciscoDisplay-Thin.woff') format('woff'),
+  url('../../fonts/SanFranciscoDisplay-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Regular';
+  src: url('../../fonts/SanFranciscoDisplay-Regular.eot');
+  src: url('../../fonts/SanFranciscoDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SanFranciscoDisplay-Regular.svg#SanFranciscoDisplay-Regular') format('svg'),
+  url('../../fonts/SanFranciscoDisplay-Regular.ttf') format('truetype'),
+  url('../../fonts/SanFranciscoDisplay-Regular.woff') format('woff'),
+  url('../../fonts/SanFranciscoDisplay-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Semibold';
+  src: url('../../fonts/SanFranciscoDisplay-Semibold.eot');
+  src: url('../../fonts/SanFranciscoDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SanFranciscoDisplay-Semibold.svg#SanFranciscoDisplay-Semibold') format('svg'),
+  url('../../fonts/SanFranciscoDisplay-Semibold.ttf') format('truetype'),
+  url('../../fonts/SanFranciscoDisplay-Semibold.woff') format('woff'),
+  url('../../fonts/SanFranciscoDisplay-Semibold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Bold';
+  src: url('../../fonts/SanFranciscoDisplay-Bold.eot');
+  src: url('../../fonts/SanFranciscoDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SanFranciscoDisplay-Bold.svg#SanFranciscoDisplay-Bold') format('svg'),
+  url('../../fonts/SanFranciscoDisplay-Bold.ttf') format('truetype'),
+  url('../../fonts/SanFranciscoDisplay-Bold.woff') format('woff'),
+  url('../../fonts/SanFranciscoDisplay-Bold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 
 
-$font-base: 'Roboto', sans-serif;
-$font-light: 300;
-$font-regular: 400;
-$font-medium: 500;
-$font-bold: 700;
+$font-base: 'SanFranciscoDisplay-Regular', sans-serif;
+$font-thin: 'SanFranciscoDisplay-Thin', sans-serif;;
+$font-light: 'SanFranciscoDisplay-Thin', sans-serif;;
+$font-regular: 'SanFranciscoDisplay-Regular', sans-serif;;
+$font-semibold: 'SanFranciscoDisplay-Semibold', sans-serif;;
+$font-medium: 'SanFranciscoDisplay-Semibold', sans-serif;;
+$font-bold: 'SanFranciscoDisplay-Bold', sans-serif;;

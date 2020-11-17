@@ -28,13 +28,13 @@ $spacing-values: (0, 4, 5, 8, 10, 12, 15, 20, 25,30,35,40,45, 50, 100);
 
   .mx {
     &#{$spacing-value} {
-      padding: 0 #{$spacing-value}px !important;
+      margin: 0 #{$spacing-value}px !important;
     }
   }
 
   .my {
     &#{$spacing-value} {
-      padding: #{$spacing-value}px  0 !important ;
+      margin: #{$spacing-value}px  0 !important ;
     }
   }
   //Margin - End

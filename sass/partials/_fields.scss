@@ -83,9 +83,8 @@ input[type="checkbox"]{margin-right: 5px;vertical-align: middle}
 
 .fieldset_common {border: none;margin: 0;padding: 0}
 
-.input_common {background: white;font-weight: $font-medium;font-size: $font-size-xs;min-height: 40px;border: solid 1px $color-border-input;outline: none;padding: 5px 10px;box-shadow: none;color: $color-text-input;
+.input_common {background: white;font-weight: $font-medium;font-size: $font-size-xs;min-height: 36px;border: solid 1px $color-border-input;outline: none;padding: 5px 10px;box-shadow: none;color: $color-text-input;
   @include transition(all .3s ease);
-  @include border-radius(3px);
 
   &:focus {box-shadow: none;border-color: $color-brand;
     &::placeholder {color: #595959}
@@ -109,8 +108,4 @@ input[type="checkbox"]{margin-right: 5px;vertical-align: middle}
     }
     .input_common {padding-right: 30px;}
   }
-}
-
-.input_style1 {background: inherit;border: none;border-bottom: solid 2px black5;font-size: $font-size-m;color: inherit;padding: 8px;display: block;
-  &::placeholder {color: black5}
 }

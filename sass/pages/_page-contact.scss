@@ -1,0 +1,12 @@
+#page_contact {}
+.contact_container {}
+.contact_title {font-size: 40px;font-family: $font-light;text-align: center;margin:0 0  45px;font-weight: normal;word-spacing: 15px;}
+.contact_summary {font-size: $font-size-m;font-family: $font-light;margin: 0 0 30px}
+.contact_frm {}
+.contact_frm__title {font-size: $font-size-b;font-family: $font-light;margin: 0 0 15px}
+.contact_frm__row {margin-bottom: 15px;
+  label {font-size: $font-size-m;margin: 0 0 5px;display: inline-block}
+  textarea {resize: none}
+}
+.contact_frm__input {}
+.contact_frm__submit {background: $color-dark;padding: 10px 15px;border: none;display: inline-block;min-width: 120px;color: white}

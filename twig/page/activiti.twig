@@ -12,27 +12,28 @@
 {% block page %}
     <div id="page_activiti" class="page_main">
         {% include "../layout/header.twig" %}
-        {% include "../layout/banner.twig" %}
         <div class="page_body">
             <div class="container">
-                <div class="page_title">
-                    <span>ACTIVITIES</span>
-                </div>
-                <div class="activiti_group">
-                    {% for j in 0..1 %}
-                    <div class="row activiti_thumbs">
-                        {% for i in 0..3 %}
-                            <div class="col-md-3 activiti_item">
-                                <div class="activiti_thumbs">
-                                    <a href="#" title="">
-                                        <img src="http://via.placeholder.com/340x230" alt=""/>
-                                    </a>
-                                </div>
+                <div class="block">
+                    <div class="block_header">
+                        <h2 class="block_title"><span class="fw_medium">ACTIVITIES</span></h2>
+                    </div>
+                    <div class="block_body">
+                        {% for j in 0..1 %}
+                        <div class="activiti_group">
+                            <div class="row activiti_row">
+                                {% for i in 0..3 %}
+                                    <div class="col-2 col-md-6 col-lg-3 activiti_item">
+                                        <a href="#" title="" class="activiti_thumb">
+                                            <img src="http://via.placeholder.com/340x230" alt=""/>
+                                        </a>
+                                    </div>
+                                {% endfor %}
                             </div>
+                            <div class="activiti_summary">Workshop cùng bé làm búp bê gỗ</div>
+                        </div>
                         {% endfor %}
                     </div>
-                    <div class="activiti_summary">Workshop cùng bé làm búp bê gỗ</div>
-                    {% endfor %}
                 </div>
             </div>
         </div>

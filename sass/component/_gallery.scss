@@ -1,0 +1,17 @@
+.product_gallery {
+  .gallery-top {height: 100%;width: 100%;border: solid 1px $color-text;
+    .swiper-slide {position: relative;
+      &::before {content: '';display: block;padding-top: 100%}
+      img {@include responsive-ratio-img()}
+    }
+  }
+
+  .gallery-thumbs {height: 20%;box-sizing: border-box;padding: 10px 0;}
+
+  .gallery-thumbs .swiper-slide {height: 100%;opacity: 0.4;position: relative;border: solid 1px $color-text;
+    &::before {content: '';display: block;padding-top: 100%}
+    img {@include responsive-ratio-img()}
+  }
+
+  .gallery-thumbs .swiper-slide-thumb-active {opacity: 1;}
+}

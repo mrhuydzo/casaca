@@ -1,0 +1,24 @@
+<div class="product_gallery">
+    <!-- Swiper -->
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+            {% for i in 0..3 %}
+                <div class="swiper-slide">
+                    <img src="http://via.placeholder.com/300x300" alt=""/>
+                </div>
+            {% endfor %}
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+            {% for i in 0..3 %}
+                <div class="swiper-slide">
+                    <img src="http://via.placeholder.com/300x300" alt=""/>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

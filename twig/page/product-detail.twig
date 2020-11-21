@@ -1,17 +1,15 @@
 {% extends "../layout/layout.twig" %}
 {% block pageTitle %} Casaca | Page Product {% endblock %}
 {% block page %}
+
     <div id="page_product_detail" class="page_main">
         {% include "../layout/header.twig" %}
-        {% include "../layout/banner.twig" %}
         <div class="page_body">
             <div class="container">
                 <div class="product_detail__container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="product_gallery">
-
-                            </div>
+                            {% include '../components/gallery.twig' %}
                         </div>
                         <div class="col-md-6">
                             <div class="product_detail__box">
@@ -41,7 +39,7 @@
                     <div class="product_collection">
                         <div class="row product_collection__row">
                             {% for i in 0..3 %}
-                                <div class="col-md-3 product_collection__col">
+                                <div class="col-6 col-md-3 product_collection__col">
                                     {% include '../components/product_item.twig' %}
                                 </div>
                             {% endfor %}

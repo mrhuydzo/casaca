@@ -1,0 +1,19 @@
+
+.product_detail__container {margin: 0 0 100px}
+.product_detail__box {}
+.product_detail__name {font-size: 40px;font-family: $font-regular;margin: 0 0 5px;font-weight: normal;color: #303030}
+.product_detail__price {font-size: $font-size-b;margin: 0 0 15px;font-family: $font-medium;color: #303030}
+.product_detail__attr {color: #303030;
+  div {margin: 0 0 5px}
+}
+
+
+.product_detail__like {
+  .header {text-align: center;margin: 0 0 30px;
+    h3 {font-size: 40px;margin: 0;padding: 0 0 20px;position: relative;font-weight: normal;color: #303030;
+      &::before {content: '';background: #303030;width: 100px;height: 1px;position: absolute;bottom: 0;left: 50%;
+        @include translate(-50%,0);
+      }
+    }
+  }
+}

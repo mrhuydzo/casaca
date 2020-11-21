@@ -42,4 +42,10 @@
   svg {width: 20px;height: 20px;position: absolute;right: 20px;top: 8px;color: $color-text-gray}
 }
 
+.footer_social__lst {}
+.footer_social__item {display: inline-block;width: 26px;height: 26px;font-size: 0;
+  + a {margin-left: 10px}
+  svg {width: 100%}
+}
+
 .copyright {background: #FAFAFA;padding: 30px 0;border-top: solid 1px $color-border-secondary}

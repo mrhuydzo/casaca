@@ -69,7 +69,7 @@
       @media (min-width: $bp-l) {
         color: inherit;float: none
       }
-      &:hover {color: $color-base;}
+      &:hover {color: black;}
     }
     &.current-menu-item > a {color: $color-base;}
     i {margin-right: 5px}
@@ -87,7 +87,7 @@
 ul.sub_menu {background: transparent;position: inherit;top: inherit; right: inherit;visibility: inherit;opacity: inherit;min-width: inherit;padding: 0 0 0 15px;margin: 0;
   @extend %reset-lst;
   @media (min-width: $bp-l) {
-    background: #fff;position: absolute;z-index: 11;top: 30px;right: 0;padding:0 0 15px;visibility: hidden;opacity: 0;min-width: 200px;border-top: 2px solid $color-base;
+    background: #fff;position: absolute;z-index: 11;top: 30px;left: 0;padding:0 0 15px;visibility: hidden;opacity: 0;min-width: 200px;border-top: 2px solid $color-base;
     box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
     @include transition(all .3s ease-in-out);
   }

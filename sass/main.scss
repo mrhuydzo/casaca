@@ -16,7 +16,6 @@
 @import "component/_home-blog";
 @import "component/_subcribe";
 @import "component/_block";
-@import "component/_gallery";
 
 
 @import "partials/_form";
@@ -37,7 +36,8 @@
 // Page-specific stylesheets
 
 @import "pages/_page-home";
-@import "pages/_page-product-detail";
+@import "pages/_page-activiti";
+@import "pages/_page-contact";
 
 
 // Vendors and external stylesheets

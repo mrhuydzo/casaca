@@ -1,0 +1,13 @@
+#page_activiti {}
+.activiti_group {margin-bottom: 50px;}
+.activiti_row {}
+.activiti_item {margin-bottom: 30px}
+.activiti_thumb {display: block;font-size: 0;position: relative;
+  &::before {content: '';display: block;
+    @include responsive-ratio(225,172);
+  }
+  img {
+    @include responsive-ratio-img()
+  }
+}
+.activiti_summary {text-align: center;font-size: $font-size-b;font-family: $font-light}

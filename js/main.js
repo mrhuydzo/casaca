@@ -39,6 +39,7 @@ function gallery(){
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         slidesPerView: 4,
+        direction: 'vertical',
         loop: true,
         freeMode: true,
         loopedSlides: 5, //looped slides should be the same
@@ -48,15 +49,28 @@ function gallery(){
     });
     var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
+        slidesPerView: 1,
         loop: true,
         loopedSlides: 5, //looped slides should be the same
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        thumbs: {
-            swiper: galleryThumbs,
-        },
+
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+            },
+            1024: {
+                slidesPerView: 1,
+            },
+        }
     });
 }
 

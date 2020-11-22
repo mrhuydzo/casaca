@@ -13,5 +13,8 @@
     </defs>
     <rect id="Layer_1" data-name="Layer 1" width="26" height="26" fill="url(#pattern)"/>
   </symbol>
+  <symbol id="chevron-down" viewBox="0 0 16.006 8.71">
+    <path id="Path_38" data-name="Path 38" d="M32.145,19.792a.5.5,0,0,1,.707,0h0L40,26.941l7.149-7.15a.5.5,0,0,1,.708.708L40,28.355,32.143,20.5a.5.5,0,0,1,0-.707Z" transform="translate(-31.997 -19.645)"  fill="currentColor"/>
+  </symbol>
 
 </svg>

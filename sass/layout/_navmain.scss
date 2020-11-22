@@ -58,7 +58,7 @@
   }
   & > li {padding: 10px 0;position: relative;
     &.has_children {
-        & > a {color: white;
+        & > a {
           &:before {content: '';background: url(https://use.fontawesome.com/releases/v5.0.10/svgs/solid/chevron-down.svg) no-repeat 50% 50%;display: block;position: absolute;right: 0;top: 50%;width: 10px;height: 10px;
             @include transform(translateY(-50%))
           }
